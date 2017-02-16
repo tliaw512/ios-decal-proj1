@@ -34,7 +34,7 @@ You **must** include all features listed under the "Hangman Game View" and "Fini
 
 ### Finished Game States, Start New Game ###
 * A win state, indicated by an Alert (Pop up box). This should prevent additional guesses
-* A fail state, indicated by an Alert (Pop up box). This should prevent additional guesses)
+* A fail state, indicated by an Alert (Pop up box). This should prevent additional guesses
 * A "Start Over" button, which starts a new game
 
 ### Optional Additions / Features ###
@@ -46,4 +46,6 @@ You **must** include all features listed under the "Hangman Game View" and "Fini
 
 If you complete all of the required features you will get full credit. We will deduct points for missing features, bugs, and UI layout issues. If you impress us with additional features (see the Optional Features section), you may be awarded an additional extra credit point.
 
-Once you're done, submit **all of your project files** in a zipped folder to [Gradescope](https://gradescope.com/courses/5482/assignments/18815).
+**Note - though encouraged, you do not have to layout your app for horizontal phone orientations. However, TA's will be testing your apps using an arbitrarily picked simulator, so make sure your app layout is supported on all iOS Devices in the vertical orientation.** 
+
+Once you're done, submit **all of your project files** to [Gradescope](https://gradescope.com/courses/5482/assignments/18815) either in a zipped folder or using their GitHub submission feature. If you have an issue submitting, please first make sure you are not submitting any .git files. 
