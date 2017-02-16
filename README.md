@@ -33,9 +33,9 @@ You **must** include all features listed under the "Hangman Game View" and "Fini
 * A square-dimensioned UIImageView that represents the "state" of the Hangman, with appropriate images for each "state"
 
 ### Finished Game States, Start New Game ###
-* A win state, indicated by an Alert (Pop up box). This should prevent additional guesses
-* A fail state, indicated by an Alert (Pop up box). This should prevent additional guesses
-* A "Start Over" button, which starts a new game
+- [ ] A win state, indicated by an Alert (Pop up box). This should prevent additional guesses
+- [ ] A fail state, indicated by an Alert (Pop up box). This should prevent additional guesses
+- [ ] A "Start Over" button, which starts a new game
 
 ### Optional Additions / Features ###
 * A smart way for the user to guess letters (since a TextField for letter entry isn't ideal UX).
