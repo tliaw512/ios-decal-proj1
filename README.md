@@ -48,4 +48,7 @@ If you complete all of the required features you will get full credit. We will d
 
 **Note - though encouraged, you do not have to layout your app for horizontal phone orientations. However, TA's will be testing your apps using an arbitrarily picked simulator, so make sure your app layout is supported on all iOS Devices in the vertical orientation.** 
 
-Once you're done, submit **all of your project files** to [Gradescope](https://gradescope.com/courses/5482/assignments/18815) either in a zipped folder or using their GitHub submission feature. If you have an issue submitting, please first make sure you are not submitting any .git files. 
+
+To submit, please upload your code to either GitHub or Bitbucket, and use the "Github" or "Bitbucket" submission feature on Gradescope (we've experienced the fewest amount of bugs with students who have submitted this way). 
+
+Alternatively you can submit your project as a zip folder. To do this please open your ios-decal-proj1 folder in finder, and compress the contents inside (not the folder itself). This should generate a file, **Archive.zip**, that you can submit to [Gradescope](https://gradescope.com/courses/5482/assignments/18815). Please test that you uploaded correctly by downloading your submission, and testing that downloaded version in Xcode.
