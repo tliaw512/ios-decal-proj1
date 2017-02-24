@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="33m-bG-32Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hangman View Controller-->
+        <scene sceneID="g3I-Av-Lxo">
+            <objects>
+                <viewController id="33m-bG-32Y" customClass="HangmanViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fga-sG-nzY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rkb-O3-rip"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xKS-yl-l6T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="hangman1" translatesAutoresizingMaskIntoConstraints="NO" id="e7A-RM-Pzg" userLabel="hangman_image_view">
+                                <rect key="frame" x="96" y="51" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxm-7y-ZXC">
+                                <rect key="frame" x="164" y="561" width="46" height="30"/>
+                                <state key="normal" title="Guess ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButton:" destination="33m-bG-32Y" eventType="touchUpInside" id="HuB-24-W1X"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="guess_text_field" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fu-os-HnI">
+                                <rect key="frame" x="96" y="425" width="177" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="oIX-4J-a3J"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="word_label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jig-Zt-eM6">
+                                <rect key="frame" x="96" y="219" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="incorrect_guesses_label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFW-E0-xKW">
+                                <rect key="frame" x="64" y="280" width="247" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jig-Zt-eM6" firstAttribute="top" secondItem="e7A-RM-Pzg" secondAttribute="bottom" constant="20" id="1yJ-r2-rIG"/>
+                            <constraint firstItem="e7A-RM-Pzg" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="Eyi-sJ-uMY"/>
+                            <constraint firstItem="Jig-Zt-eM6" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="KeQ-My-5Vp"/>
+                            <constraint firstItem="sxm-7y-ZXC" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="ggr-0W-0Jg"/>
+                            <constraint firstItem="2fu-os-HnI" firstAttribute="top" secondItem="bFW-E0-xKW" secondAttribute="bottom" constant="20" id="nT3-0X-rbj"/>
+                            <constraint firstItem="bFW-E0-xKW" firstAttribute="top" secondItem="Jig-Zt-eM6" secondAttribute="bottom" constant="10" id="nv8-DI-hyt"/>
+                            <constraint firstItem="bFW-E0-xKW" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="sDs-ht-Xmy"/>
+                            <constraint firstItem="sxm-7y-ZXC" firstAttribute="top" secondItem="2fu-os-HnI" secondAttribute="bottom" constant="30" id="xik-OQ-ect"/>
+                            <constraint firstItem="2fu-os-HnI" firstAttribute="centerX" secondItem="xKS-yl-l6T" secondAttribute="centerX" id="z0Z-gS-Fc4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guess" destination="2fu-os-HnI" id="QQq-GC-Im2"/>
+                        <outlet property="hangmanImage" destination="e7A-RM-Pzg" id="8yB-c4-XWn"/>
+                        <outlet property="incorrectGuesses" destination="bFW-E0-xKW" id="b8H-lL-xtZ"/>
+                        <outlet property="wordToGuess" destination="Jig-Zt-eM6" id="ZJQ-nA-Fzv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJo-zA-LYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="-133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hangman1" width="200" height="200"/>
+    </resources>
+</document>
